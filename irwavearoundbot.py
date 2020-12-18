@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 from pyautogui import press, typewrite, hotkey, write
 
+VERSION = "0.01"
 
 # this is our State class, with some helpful variables
 class State:
@@ -102,6 +103,12 @@ def loop(lastflag, wavedone):
 
 
 if __name__ == '__main__':
+    print("Starting up irwavearoundbot...")
+    print("Version: ",VERSION)
+    print("---------------------------------------------")
+    print("Enter a league or hosted session as an admin.")
+    print("Waiting...")
+    print("---------------------------------------------")
     # initializing ir and state
     ir = irsdk.IRSDK()
     state = State()
